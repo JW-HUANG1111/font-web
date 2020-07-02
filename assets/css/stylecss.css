@@ -1,126 +1,190 @@
 @import url(reset.css);
 
 
+header {
+    background-color: #F6F8F9;
+}
+/*the toggles have to come first, because you need to override them with the media queries*/
+#menu-check {
+    display: none;
+}
+
+#menu-toggle {
+    display: none
+}
+
 ul.topnav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #F6F8F9;
     top: 0;
-    display: inline-block;
+
 }
-  
+
 ul.topnav li {
     float: right;
 }
-  
+
 ul.topnav li a {
     display: block;
-    color: white;
+    color: #FFC96C;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
-  
-ul.topnav li a:hover:not(.active) {background-color: #111;}
-  
-ul.topnav li a.active {background-color: #4CAF50;}
-  
-ul.topnav li.right {float: right;}
-  
-  @media screen and (max-width: 600px) {
-    #menu-toggle{
+}
+
+ul.topnav li a:hover:not(.active) {
+    background-color: gray;
+}
+
+ul.topnav li a.active {
+    background-color: #A6ADB4;
+}
+
+ul.topnav li.right {
+    float: right;
+}
+ul.topnav li.left {
+    float: left;
+    text-align: center;
+}
+
+img#logo{
+    padding: 0px 16px;
+}
+p{
+    text-align: center;
+    color: #FFFFFF;
+}
+p.content{
+    color: #A6ADB4;
+}
+@media screen and (max-width: 600px) {
+
+    header{
+        position: sticky;
+    }
+    nav{
+    padding: 10px;
+    }
+    #menu-toggle {
+        display: contents;
+        background-color: #F6F8F9;
+        /*        z-index: 100;*/
+        color: #FFC96C;
+        padding: 10px;
+        position: sticky;
+
+        /*
         position: absolute;
         top: 10px;
         right: 20px;
         display: block;
+*/
     }
-    #menu-check ~ ul{
+
+    #menu-check ~ ul {
         display: none;
     }
-    #menu-check:checked ~ ul{
+
+    #menu-check:checked ~ ul {
         display: block;
     }
-    ul{
+
+    ul {
         list-style: none;
     }
-    ul.topnav li.right, 
-    ul.topnav li {float: none;}
-   
-  }
-#menu-check{
-    display: none;
+    ul.topnav li.left {
+        display: none;
+    }
+    ul.topnav li.right,
+    ul.topnav li {
+        float: none;
+    }
+
 }
-#menu-toggle{
-    display: inline-block;
-}
+
 .icon {
     width: 35px;
     height: 5px;
     background-color: black;
     margin: 6px 0;
-  }
-footer{
+}
+
+footer {
     margin-top: 0px;
     text-align: center;
-    background-color:lightgray;
+    background-color: lightgray;
     padding-top: 25px;
     padding-bottom: 40px;
-    
+
 }
+
 .arboretum {
     height: 855px;
     background-image: url(../img/churchill-house-5.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment:fixed;
-}
-h1{
-    color: white;
-    text-align: center;
-}
-@media (min-width: 768px) and (max-width: 4000px) {
-    h1 {
-        font-size: 1.5em;
-    }
-}
-@media (min-width: 768px) and (max-width: 1300px) {
-    h1 {
-        font-size: 0.8em;
-    }
-}
-@media (max-width: 768px) {
-    h1 {
-        font-size: 0.6em;
-    }
-}
-.text{
-    border:2px solid;
-    border-radius:25px;
-    box-shadow: 10px 10px 5px #888888;
-    text-align: center;
-    background-color: white;
-    padding: 10px;
+    background-attachment: fixed;
     
 }
+
+h1 {
+    color: #FFC96C;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10%;
+}
+
+@media (min-width: 768px) and (max-width: 4000px) {
+    h1 {
+        font-size: 6.5em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1300px) {
+    h1 {
+        font-size: 4.8em;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.6em;
+    }
+}
+
+.text {
+    border: 2px solid;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.75);
+    text-align: right;
+    background-color:rgba(255, 255, 255,0.95);
+    padding: 10px;
+    margin: 45px;
+    
+}
+
 .button {
     position: relative;
-    background-color: #4CAF50;
+    background-color:#FFC96C;
     border: none;
-    font-size: 28px;
+    font-size: 85%;
     color: #FFFFFF;
-    padding: 20px;
-    width: 200px;
+    padding: 1%;
+    width: 120px;
     text-align: center;
     transition-duration: 0.4s;
     text-decoration: none;
     overflow: hidden;
     cursor: pointer;
     border-radius: 12px;
-  }
-  
-  .button:after {
+    margin: 8px;
+}
+
+.button:after {
     content: "";
     background: #f1f1f1;
     display: block;
@@ -131,12 +195,15 @@ h1{
     margin-top: -120%;
     opacity: 0;
     transition: all 0.8s
-  }
-  
-  .button:active:after {
+}
+
+.button:active:after {
     padding: 0;
     margin: 0;
     opacity: 1;
     transition: 0s
-  }
-  .button:hover {background-color: #3e8e41}
+}
+
+.button:hover {
+    background-color: gray
+}
