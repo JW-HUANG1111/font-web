@@ -64,6 +64,12 @@ p{
 p.content{
     color: #A6ADB4;
 }
+pre{
+    text-align: left;
+    color: #A6ADB4;
+    white-space: break-spaces;
+
+}
 @media screen and (max-width: 600px) {
 
     header{
@@ -126,8 +132,16 @@ footer {
 }
 
 .arboretum {
-    height: 855px;
+    height: 600px;
     background-image: url(../img/churchill-house-5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.arboretum1 {
+    height: 2000px;
+    background-image: url(../img/extra2-robin-boyd-portrait-copyright-Mark-Strizic.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -161,7 +175,7 @@ h1 {
 
 .text {
     border: 2px solid;
-    border-radius: 25px;
+    border-radius: 5px;
     box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.75);
     text-align: right;
     background-color:rgba(255, 255, 255,0.95);
