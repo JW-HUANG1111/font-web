@@ -52,6 +52,8 @@ ul.topnav li.right {
 ul.topnav li.left {
     float: left;
     text-align: center;
+    padding: 0px 8px;
+
 }
 
 img#logo{
