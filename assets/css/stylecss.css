@@ -72,6 +72,16 @@ pre{
     white-space: break-spaces;
 
 }
+.row{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    padding: 25px;
+}
+.columns{
+  
+    margin-top: 10px;
+    margin-right: 20px;
+}
 @media screen and (max-width: 600px) {
 
     header{
@@ -134,7 +144,7 @@ footer {
 }
 
 .arboretum {
-    height: 600px;
+    height: auto;
     background-image: url(../img/churchill-house-5.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -142,7 +152,7 @@ footer {
     
 }
 .arboretum1 {
-    height: 2000px;
+    height: auto;
     background-image: url(../img/extra2-robin-boyd-portrait-copyright-Mark-Strizic.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -154,7 +164,7 @@ h1 {
     color: #FFC96C;
     text-align: center;
     vertical-align: middle;
-    padding: 10%;
+    padding: 5%;
 }
 
 @media (min-width: 768px) and (max-width: 4000px) {
@@ -174,7 +184,9 @@ h1 {
         font-size: 2.6em;
     }
 }
-
+.mg{
+   padding: 45px; 
+}
 .text {
     border: 2px solid;
     border-radius: 5px;
@@ -182,10 +194,16 @@ h1 {
     text-align: right;
     background-color:rgba(255, 255, 255,0.95);
     padding: 10px;
-    margin: 45px;
+
     
 }
-
+.op{
+    border: 2px solid;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.75);
+    background-color:rgba(255, 255, 255,0.95);
+    padding: 10px;
+}
 .button {
     position: relative;
     background-color:#FFC96C;
