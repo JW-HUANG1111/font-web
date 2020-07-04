@@ -15,15 +15,17 @@ header {
 #menu-toggle {
     display: none
 }
-
+ul.sidenav{
+    position: sticky;
+    top: 0px;
+}
 ul.topnav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #F6F8F9;
-    top: 0;
-
+    position: sticky;
 }
 
 ul.topnav li {
@@ -173,6 +175,7 @@ footer {
 }
 .arboretum2 {
     background-attachment: fixed;
+
 }
 .History{
     height: auto;
@@ -181,8 +184,6 @@ footer {
     filter: grayscale(100%);
     background-repeat: no-repeat;
     background-attachment:inherit;
-    position: relative;
-
 }
 .MainBuilding{
     height: auto;
@@ -191,8 +192,6 @@ footer {
     filter: grayscale(100%);
     background-repeat: no-repeat;
     background-attachment:inherit;
-    position: relative;
-
 }
 .NorthWing{
     height: auto;
@@ -201,7 +200,7 @@ footer {
     filter: grayscale(100%);
     background-repeat: no-repeat;
     background-attachment:inherit;
-    position: relative;
+
 
 }
 .Pool{
@@ -211,7 +210,7 @@ footer {
     filter: grayscale(100%);
     background-repeat: no-repeat;
     background-attachment:inherit;
-    position: relative;
+
 
 }
 .keyfeatures{
@@ -221,7 +220,7 @@ footer {
     filter: grayscale(100%);
     background-repeat: no-repeat;
     background-attachment:inherit;
-    position: relative;
+
 
 }
 .Signifigance{
@@ -231,7 +230,7 @@ footer {
     filter: grayscale(100%);
     background-repeat: no-repeat;
     background-attachment:inherit;
-    position: relative;
+
 
 }
 h1 {
@@ -297,8 +296,8 @@ h1 {
     border: none;
     color: #f1f1f1;
     text-align: center;
-    font-size: 5%;
-    padding: 10%;
+    font-size: 100%;
+    padding: 25%;
     transition: all 0.5s;
     cursor: pointer;
     width: min-content;
