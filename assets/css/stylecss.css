@@ -5,6 +5,7 @@ header {
     background-color: #F6F8F9;
     position: sticky;
     top: 0px;
+    z-index:9999
 }
 
 /*the toggles have to come first, because you need to override them with the media queries*/
@@ -18,7 +19,9 @@ header {
 ul.sidenav{
     position: sticky;
     top: 0px;
+    z-index:9999
 }
+
 ul.topnav {
     list-style-type: none;
     margin: 0;
