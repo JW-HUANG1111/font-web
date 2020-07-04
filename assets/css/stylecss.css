@@ -66,6 +66,10 @@ p{
 p.content{
     color: #A6ADB4;
 }
+p.sub{
+    text-align: left;
+    color: black;
+}
 pre{
     text-align: left;
     color: #A6ADB4;
@@ -75,12 +79,15 @@ pre{
 .row{
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
-    padding: 25px;
+    padding: 10px;
 }
-.columns{
-  
-    margin-top: 10px;
+.columns{ 
+    margin-top: 25px;
     margin-right: 20px;
+}
+.columns1{ 
+    padding-top: 15%;
+    padding-left: 35%;
 }
 @media screen and (max-width: 600px) {
 
@@ -124,6 +131,11 @@ pre{
     ul.topnav li {
         float: none;
     }
+    .row{
+        display: grid;
+        grid-template-columns: auto;
+        padding: 25px;
+    }
 
 }
 
@@ -159,7 +171,69 @@ footer {
     background-attachment: fixed;
     
 }
+.arboretum2 {
+    background-attachment: fixed;
+}
+.History{
+    height: auto;
+    background-image: url(../img/churchill-house-4.jpg);
+    background-size: cover;
+    filter: grayscale(100%);
+    background-repeat: no-repeat;
+    background-attachment:inherit;
+    position: relative;
 
+}
+.MainBuilding{
+    height: auto;
+    background-image: url(../img/churchill-house-19.jpg);
+    background-size: cover;
+    filter: grayscale(100%);
+    background-repeat: no-repeat;
+    background-attachment:inherit;
+    position: relative;
+
+}
+.NorthWing{
+    height: auto;
+    background-image: url(../img/churchill-house-13.jpg);
+    background-size: cover;
+    filter: grayscale(100%);
+    background-repeat: no-repeat;
+    background-attachment:inherit;
+    position: relative;
+
+}
+.Pool{
+    height: auto;
+    background-image: url(../img/churchill-house-18.jpg);
+    background-size: cover;
+    filter: grayscale(100%);
+    background-repeat: no-repeat;
+    background-attachment:inherit;
+    position: relative;
+
+}
+.keyfeatures{
+    height: auto;
+    background-image: url(../img/churchill-house-9.jpg);
+    background-size: cover;
+    filter: grayscale(100%);
+    background-repeat: no-repeat;
+    background-attachment:inherit;
+    position: relative;
+
+}
+.Signifigance{
+    height: auto;
+    background-image: url(../img/churchill-house-1.jpg);
+    background-size: cover;
+    filter: grayscale(100%);
+    background-repeat: no-repeat;
+    background-attachment:inherit;
+    position: relative;
+
+}
 h1 {
     color: #FFC96C;
     text-align: center;
@@ -197,13 +271,65 @@ h1 {
 
     
 }
+.op1{
+    border: 2px solid;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.75);
+    background-color:rgba(255, 255, 255,0.85);
+    padding: 10px;
+    font-size: small;
+}
 .op{
     border: 2px solid;
     border-radius: 5px;
     box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.75);
-    background-color:rgba(255, 255, 255,0.95);
+    background-color:rgba(255, 255, 255,0.85);
     padding: 10px;
+    font-size: small;
+    visibility: hidden;
 }
+.columns:hover > .op{
+    visibility: visible;
+}
+.button1{
+    display: inline-block;
+    background-color: #FFC96C;
+    border: none;
+    color: #f1f1f1;
+    text-align: center;
+    font-size: 5%;
+    padding: 10%;
+    transition: all 0.5s;
+    cursor: pointer;
+    width: min-content;
+    border-radius: 10px;
+
+}
+.button1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button1 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    font-size: inherit;
+  }
+  
+  .button1:hover span {
+    padding-right: 25%;
+  }
+  
+  .button1:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 .button {
     position: relative;
     background-color:#FFC96C;
@@ -243,4 +369,7 @@ h1 {
 
 .button:hover {
     background-color: gray
+}
+body{
+    line-height: 1.25;
 }
