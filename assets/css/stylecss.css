@@ -19,7 +19,7 @@ header {
 
 .sidenav{
     width: 130px;
-    position: fixed;
+    position: sticky;
     z-index:9999;
     top: 0;
     left: 10px;
@@ -319,7 +319,7 @@ h1 {
     color: #f1f1f1;
     text-align: center;
     font-size: 100%;
-    padding: 25%;
+    padding: 10%;
     transition: all 0.5s;
     cursor: pointer;
     width: min-content;
@@ -344,7 +344,8 @@ h1 {
   }
   
   .button1:hover span {
-    padding-right: 25%;
+    padding-right: 65%;
+
   }
   
   .button1:hover span:after {
