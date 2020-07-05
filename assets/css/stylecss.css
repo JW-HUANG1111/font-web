@@ -1,18 +1,12 @@
 @import url(reset.css);
 
-
 header {
     background-color: #F6F8F9;
     position: sticky;
     position: -webkit-sticky;  /* for Safari */
     top: 0px;
-    z-index:9999
-}
-nav{
-    position: sticky;
-    position: -webkit-sticky;  /* for Safari */
-    top: 0px;
-    z-index:9999
+    z-index:9999;
+    display: inherit;
 }
 /*the toggles have to come first, because you need to override them with the media queries*/
 #menu-check {
@@ -22,20 +16,37 @@ nav{
 #menu-toggle {
     display: none
 }
-ul.sidenav{
-    position: sticky;
-    position: -webkit-sticky;  /* for Safari */
-    top: 0px;
-    z-index:9999
+
+.sidenav{
+    width: 130px;
+    position: fixed;
+    z-index:9999;
+    top: 0;
+    left: 10px;
+    background: #eee;
+    overflow-x: hidden;
+    padding: 8px 0;
+    display: inline-block;
 }
 
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2196F3;
+    display: block;
+  }
+.sidenav a:hover {
+    color: #064579;
+  }
+  
 ul.topnav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #F6F8F9;
-    position: sticky;
+
 }
 
 ul.topnav li {
@@ -82,12 +93,12 @@ p.sub{
     text-align: left;
     color: black;
 }
-pre{
+p.main{
     text-align: left;
     color: #A6ADB4;
     white-space: break-spaces;
-
 }
+
 .row{
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
@@ -98,8 +109,9 @@ pre{
     margin-right: 20px;
 }
 .columns1{ 
-    padding-top: 15%;
-    padding-left: 35%;
+    padding-top: 25%;
+    padding-left: 55%;
+    padding-bottom: 15px;
 }
 @media screen and (max-width: 600px) {
 
@@ -185,7 +197,7 @@ footer {
 }
 .arboretum2 {
     background-attachment: fixed;
-
+    display: inline-table;
 }
 .History{
     height: auto;
