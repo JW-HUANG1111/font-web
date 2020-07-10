@@ -16,9 +16,12 @@ header {
 }
 
 #menu-toggle {
-    display: none
+    display: none;
 }
 
+a{
+    text-decoration : none;
+}
 .sidenav {
     width: 100%;
     position: sticky;
@@ -31,7 +34,9 @@ header {
     display: inline-block;
     list-style-type: none;
 }
-
+.list{
+    list-style-type: none;
+}
 .sidenav li a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
@@ -106,6 +111,7 @@ p {
 
 p.content {
     color: #A6ADB4;
+    font-size: 1.5em;
 }
 
 p.sub {
@@ -116,7 +122,6 @@ p.sub {
 p.main {
     text-align: left;
     color: #A6ADB4;
-    white-space: break-spaces;
 }
 
 .row {
@@ -128,12 +133,14 @@ p.main {
     padding-top: 25%;
     padding-right: 20%;
     padding-bottom: 10px;
+    padding-left: 10px;
 }
 
 .columns1 {
     padding-top: 25%;
     padding-left: 45%;
     padding-bottom: 15px;
+    padding-right: 15px;
 }
 
 @media screen and (max-width: 600px) {
@@ -220,7 +227,7 @@ footer {
     background-color: lightgray;
     padding-top: 25px;
     padding-bottom: 40px;
-
+    bottom: 0;
 }
 
 .arboretum {
@@ -229,7 +236,6 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-
 }
 
 .arboretum1 {
@@ -243,7 +249,7 @@ footer {
 
 .arboretum2 {
     background-attachment: fixed;
-    display: inline-table;
+
 }
 
 .History {
@@ -315,10 +321,10 @@ h1 {
     padding: 5%;
 }
 
-@media (min-width: 768px) and (max-width: 4000px) {
+@media (min-width: 1300px) {
     h1 {
-        font-size: 6.5em;
-    }
+        font-size: 714%;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 1300px) {
@@ -330,6 +336,9 @@ h1 {
 @media (max-width: 768px) {
     h1 {
         font-size: 2.6em;
+    }
+    p.content {
+        font-size: 1.2em;
     }
 }
 
@@ -366,22 +375,22 @@ h1 {
     padding: 10px;
     font-size: small;
     visibility: hidden;
-
+    transition: all 1s;
 }
 
-.columns:hover>.op {
+.columns:hover>.op{
     visibility: visible;
 }
 
 .button1 {
-    display: inline-block;
+    display: grid;
     background-color: #FFC96C;
     border: none;
     color: #f1f1f1;
     text-align: center;
     font-size: 100%;
     padding: 10%;
-    transition: all 0.5s;
+
     cursor: pointer;
     width: min-content;
     border-radius: 10px;
@@ -392,7 +401,7 @@ h1 {
     cursor: pointer;
     display: inline-block;
     position: relative;
-    transition: 0.5s;
+    transition: all 0.5s;
 }
 
 .button1 span:after {
@@ -415,6 +424,7 @@ h1 {
     right: 0;
 }
 
+
 .button {
     position: relative;
     background-color: #FFC96C;
@@ -430,6 +440,7 @@ h1 {
     cursor: pointer;
     border-radius: 12px;
     margin: 8px;
+    display: inline-block;
 }
 
 .button:after {
