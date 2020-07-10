@@ -31,9 +31,11 @@ a {
     left: 10px;
     background-color: #F6F8F9;
     overflow-x: hidden;
-    padding: 8px 0;
     display: inline-block;
     list-style-type: none;
+    border: 2px solid;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.75);
 }
 
 .list {
@@ -45,7 +47,7 @@ a {
     text-decoration: none;
     font-size: larger;
     color: #FFC96C;
-    display: block;
+    display: grid;
 }
 
 .sidenav li a:hover:not(.active) {
@@ -102,8 +104,21 @@ ul.topnav li.left {
 
 }
 
-img#logo {
-    padding: 0px 16px;
+ul.botnav li a {
+    color: #FFFFFF;
+    margin: 10px;
+    text-decoration: none;
+}
+ul.botnav li a:hover {
+    color: gray;
+}
+
+ul.botnav li a.active {
+    color: #A6ADB4;
+}
+
+img.logo {
+    padding: 2px 16px;
     height: 40px;
 }
 
@@ -120,13 +135,19 @@ p.content {
 p.sub {
     text-align: left;
     color: black;
+    font-weight:bold;   
+    display: grid;
 }
 
 p.main {
     text-align: left;
-    color: #A6ADB4;
+    color: black;
+    font-size: medium;
 }
-
+p.sdop{
+    color: #FFC96C;
+    text-align: center;
+}
 .row {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
@@ -135,14 +156,14 @@ p.main {
 
 .columns {
     padding-top: 25%;
-    padding-right: 20%;
+    padding-right: 10%;
     padding-bottom: 10px;
     padding-left: 10px;
 }
 
 .columns1 {
     padding-top: 25%;
-    padding-left: 45%;
+    padding-left: 35%;
     padding-bottom: 15px;
     padding-right: 15px;
 }
@@ -188,21 +209,10 @@ p.main {
         display: none;
     }
 
-    #menu-toggle .fa-angle-down {
-        display: none;
-    }
-
     #menu-check:checked~ul {
         display: block;
     }
 
-    #menu-check:checked~.fa.fa-bars {
-        display: none;
-    }
-
-    #menu-check:checked~.fa-angle-down {
-        visibility: visible;
-    }
 
     ul {
         list-style: none;
@@ -234,11 +244,11 @@ span.icon {
 
 footer {
     margin-top: 0px;
-    text-align: center;
     background-color: lightgray;
     padding-top: 25px;
     padding-bottom: 40px;
     bottom: 0;
+    font-size: larger;
 }
 
 .arboretum {
@@ -331,6 +341,10 @@ h1 {
     vertical-align: middle;
     padding: 5%;
 }
+h2{
+    font-weight:bold;
+    font-size: x-large;
+}
 
 @media (min-width: 1300px) {
     h1 {
@@ -384,7 +398,7 @@ h1 {
     border-radius: 5px;
     box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.75);
     background-color: rgba(255, 255, 255, 0.75);
-    padding: 10px;
+    padding: 5%;
     font-size: small;
     visibility: hidden;
     transition: all 1s;
@@ -400,9 +414,8 @@ h1 {
     border: none;
     color: #f1f1f1;
     text-align: center;
-    font-size: 100%;
+    font-size: 80%;
     padding: 10%;
-
     cursor: pointer;
     width: min-content;
     border-radius: 10px;
@@ -478,7 +491,15 @@ h1 {
 .button:hover {
     background-color: gray
 }
-
+i.fa.fa-home{
+    text-align: center;
+}
+i.fa.fa-arrow-up{
+    text-align: center;
+}
+.op a{
+   display: grid;
+}
 body {
     line-height: 1.25;
 }
