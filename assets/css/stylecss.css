@@ -23,6 +23,13 @@ a {
     text-decoration: none;
 }
 
+.list {
+    list-style-type: none;
+    text-align: left;
+    color: #A6ADB4;
+    font-size: 1.5em;
+}
+
 .sidenav {
     width: 100%;
     position: sticky;
@@ -38,9 +45,6 @@ a {
     box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.75);
 }
 
-.list {
-    list-style-type: none;
-}
 
 .sidenav li a {
     padding: 6px 8px 6px 16px;
@@ -103,19 +107,24 @@ ul.topnav li.left {
     padding: 0px 8px;
 
 }
-
-ul.botnav li a {
-    color: #FFFFFF;
+ul.botnav{
+    padding: 0;
+    list-style-type: none;
+    width: 15%;
+}
+ul.botnav li{
     margin: 10px;
+
+}
+ul.botnav li a {
+    color: #A6ADB4;
     text-decoration: none;
+    display: grid;
 }
 ul.botnav li a:hover {
-    color: gray;
+    color: #F6F8F9;
 }
 
-ul.botnav li a.active {
-    color: #A6ADB4;
-}
 
 img.logo {
     padding: 2px 16px;
@@ -148,6 +157,7 @@ p.sdop{
     color: #FFC96C;
     text-align: center;
 }
+
 .row {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
@@ -249,8 +259,20 @@ footer {
     padding-bottom: 40px;
     bottom: 0;
     font-size: larger;
+    display: grid;
 }
-
+.footgrid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.bot{
+    margin-left: 5%;
+    margin-bottom: 1%;
+}
+.left{
+    float: left;
+    text-align: center;
+}
 .arboretum {
     height: auto;
     background-image: url(../img/churchill-house-5.png);
@@ -497,6 +519,14 @@ i.fa.fa-home{
 i.fa.fa-arrow-up{
     text-align: center;
 }
+i.fa.fa-facebook,
+i.fa.fa-twitter,
+i.fa.fa-youtube-play
+{
+    color: #FFFFFF;
+    margin-right: 5%;
+}
+
 .op a{
    display: grid;
 }
