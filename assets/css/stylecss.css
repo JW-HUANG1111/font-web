@@ -127,7 +127,7 @@ ul.botnav li a:hover {
 
 
 img.logo {
-    padding: 2px 16px;
+    padding: 1px 16px;
     height: 40px;
 }
 
@@ -199,7 +199,7 @@ p.sdop{
     }
 
     #menu-toggle {
-        display: contents;
+        display: block;
         background-color: #F6F8F9;
         color: #FFC96C;
         padding: 10px;
@@ -386,7 +386,7 @@ h2{
     }
 
     p.content {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 }
 
@@ -532,4 +532,5 @@ i.fa.fa-youtube-play
 }
 body {
     line-height: 1.25;
+    font-family: 'Source Sans Pro', sans-serif;
 }
