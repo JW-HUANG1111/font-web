@@ -9,7 +9,10 @@ header {
     z-index: 9999;
     display: inherit;
 }
-
+body {
+    line-height: 1.25;
+    font-family: 'Source Sans Pro', sans-serif;
+}
 /*the toggles have to come first, because you need to override them with the media queries*/
 #menu-check {
     display: none;
@@ -26,10 +29,16 @@ a {
 .list {
     list-style-type: none;
     text-align: left;
+    font-size: medium;
+}
+.list1 {
+    list-style-type: none;
+    text-align: left;
+    font-size: medium;
     color: #A6ADB4;
     font-size: 1.5em;
+    margin-bottom: 1em;
 }
-
 .sidenav {
     width: 100%;
     position: sticky;
@@ -97,15 +106,13 @@ ul.topnav li a.active {
     background-color: #A6ADB4;
 }
 
-ul.topnav li.right {
-    float: right;
-}
-
 ul.topnav li.left {
     float: left;
     text-align: center;
     padding: 0px 8px;
-
+}
+ul.topnav li.ys{
+    display: none;
 }
 ul.botnav{
     padding: 0;
@@ -139,6 +146,8 @@ p {
 p.content {
     color: #A6ADB4;
     font-size: 1.5em;
+    margin-bottom: 1em;
+    text-align: left;
 }
 
 p.sub {
@@ -152,6 +161,7 @@ p.main {
     text-align: left;
     color: black;
     font-size: medium;
+    margin-bottom: 1em;
 }
 p.sdop{
     color: #FFC96C;
@@ -227,8 +237,12 @@ p.sdop{
     ul {
         list-style: none;
     }
-
-    ul.topnav li.left {
+    ul.topnav li.ys{
+        display: block;
+    }
+    ul.topnav li.none,
+    ul.topnav li.left 
+    {
         display: none;
     }
 
@@ -242,7 +256,9 @@ p.sdop{
         grid-template-columns: auto;
         padding: 25px;
     }
-
+    .op{
+        visibility: visible !important;
+    }
 }
 
 span.icon {
@@ -391,7 +407,7 @@ h2{
 }
 
 .mg {
-    padding: 45px;
+    padding: 15% 5%;
 }
 
 .text {
@@ -436,8 +452,8 @@ h2{
     border: none;
     color: #f1f1f1;
     text-align: center;
-    font-size: 80%;
-    padding: 10%;
+    font-size: 100%;
+    padding: 5%;
     cursor: pointer;
     width: min-content;
     border-radius: 10px;
@@ -526,11 +542,11 @@ i.fa.fa-youtube-play
     color: #FFFFFF;
     margin-right: 5%;
 }
-
+i.fa.fa-facebook:hover,
+i.fa.fa-twitter:hover,
+i.fa.fa-youtube-play:hover{
+    color: #FFC96C;
+}
 .op a{
    display: grid;
-}
-body {
-    line-height: 1.25;
-    font-family: 'Source Sans Pro', sans-serif;
 }
