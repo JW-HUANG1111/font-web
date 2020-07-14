@@ -1,5 +1,6 @@
 @import url(reset.css);
 
+/* for sticky header */
 header {
     background-color: #F6F8F9;
     position: sticky;
@@ -9,11 +10,13 @@ header {
     z-index: 9999;
     display: inherit;
 }
+/* for main body style */
 body {
     line-height: 1.25;
     font-family: 'Source Sans Pro', sans-serif;
 }
 /*the toggles have to come first, because you need to override them with the media queries*/
+/* for not to display mobile menu */
 #menu-check {
     display: none;
 }
@@ -21,16 +24,18 @@ body {
 #menu-toggle {
     display: none;
 }
-
+/* for not to show the link line */
 a {
     text-decoration: none;
 }
-
+/* for style of list */
 .list {
     list-style-type: none;
     text-align: left;
     font-size: medium;
+    margin-bottom: 1em;
 }
+/* for style of list1 */
 .list1 {
     list-style-type: none;
     text-align: left;
@@ -39,6 +44,8 @@ a {
     font-size: 1.5em;
     margin-bottom: 1em;
 }
+
+/* for style of sticky side menu */
 .sidenav {
     width: 100%;
     position: sticky;
@@ -54,6 +61,7 @@ a {
     box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.75);
 }
 
+/* for style of sticky side menu option link */
 
 .sidenav li a {
     padding: 6px 8px 6px 16px;
@@ -62,21 +70,23 @@ a {
     color: #FFC96C;
     display: grid;
 }
-
+/* for style of sticky side menu option link when mouse is there */
 .sidenav li a:hover:not(.active) {
     background-color: gray;
 }
 
+/* for style of sticky side menu option  */
 .sidenav li {
     position: relative;
 }
-
+/* for position of menu */
 .ab {
     position: absolute;
     top: 150px;
     left: 10px;
 }
 
+/* for style of sticky top menu */
 ul.topnav {
     list-style-type: none;
     margin: 0;
@@ -114,48 +124,57 @@ ul.topnav li.left {
 ul.topnav li.ys{
     display: none;
 }
+
+/* for style of bot menu */
 ul.botnav{
     padding: 0;
     list-style-type: none;
     width: 15%;
 }
+/* for style of bot menu */
 ul.botnav li{
     margin: 10px;
 
 }
+/* for style of bot menu option link*/
 ul.botnav li a {
     color: #A6ADB4;
     text-decoration: none;
     display: grid;
 }
+
+/* for style of sticky bot menu option link when mouse is there */
+
 ul.botnav li a:hover {
     color: #F6F8F9;
 }
 
-
+/* for style of logo */
 img.logo {
     padding: 1px 16px;
     height: 40px;
 }
 
+/* for style of all paragraphs */
 p {
     text-align: center;
     color: #FFFFFF;
 }
-
+/* for style of content paragraphs */
 p.content {
     color: #A6ADB4;
     font-size: 1.5em;
     margin-bottom: 1em;
     text-align: left;
 }
-
+/* for style of subtitles paragraphs */
 p.sub {
     text-align: left;
     color: black;
     font-weight:bold;   
     display: grid;
 }
+/* for style of main paragraphs */
 
 p.main {
     text-align: left;
@@ -163,51 +182,53 @@ p.main {
     font-size: medium;
     margin-bottom: 1em;
 }
+ /* for style of side menu option */
 p.sdop{
     color: #FFC96C;
     text-align: center;
 }
 
+/* for grid display of row */
 .row {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     padding: 10px;
 }
-
+/* for grid display of columns */
 .columns {
     padding-top: 25%;
     padding-right: 10%;
     padding-bottom: 10px;
     padding-left: 10px;
 }
-
+/* for grid display of columns1 */
 .columns1 {
     padding-top: 25%;
     padding-left: 35%;
     padding-bottom: 15px;
     padding-right: 15px;
 }
-
+/* for mobile device display */
 @media screen and (max-width: 600px) {
-
+/* for sticky header */
     header {
         position: sticky;
     }
-
+/* for padding header */
     nav {
         padding: 10px;
     }
-
+/* for hidden sidenav */
     .sidenav {
         display: none;
     }
-
+/* for resize of columns1 */
     .columns1 {
         padding-top: 25%;
         padding-left: 10%;
         padding-bottom: 15px;
     }
-
+/* for display top menu of mobile size */
     #menu-toggle {
         display: block;
         background-color: #F6F8F9;
@@ -215,58 +236,58 @@ p.sdop{
         padding: 10px;
         position: sticky;
     }
-
+/* for style of icon */
     .fa.fa-bars {
         float: right;
     }
-
+/* for style of icon when mouse is there*/
     .fa.fa-bars:hover {
         background-color: gray;
         padding: 1px;
     }
-
+/* when check box is not been click not to show menu list*/
     #menu-check~ul {
         display: none;
     }
-
+/* when check box is  been clicked  to show menu list*/
     #menu-check:checked~ul {
         display: block;
     }
 
-
+/* for style of ul list */
     ul {
         list-style: none;
     }
+/* for style of ul list option*/
+
     ul.topnav li.ys{
         display: block;
     }
+/* hidden unnessrey list */
     ul.topnav li.none,
     ul.topnav li.left 
     {
         display: none;
     }
+/* for style of ul list option*/
 
     ul.topnav li.right,
     ul.topnav li {
         float: none;
     }
-
+    /* for style grid of row  */
     .row {
         display: grid;
         grid-template-columns: auto;
         padding: 25px;
     }
+    /* for display option */
     .op{
         visibility: visible !important;
     }
 }
 
-span.icon {
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
-}
+/* for style of footer */
 
 footer {
     margin-top: 0px;
@@ -277,18 +298,22 @@ footer {
     font-size: larger;
     display: grid;
 }
+/* for grid layout of footer */
+
 .footgrid{
     display: grid;
     grid-template-columns: auto auto auto;
 }
+/* for style of footer */
 .bot{
     margin-left: 5%;
     margin-bottom: 1%;
 }
+/* for center display icon */
 .left{
-    float: left;
     text-align: center;
 }
+/* for style of background image */
 .arboretum {
     height: auto;
     background-image: url(../img/churchill-house-5.png);
@@ -296,7 +321,7 @@ footer {
     background-size: cover;
     background-attachment: fixed;
 }
-
+/* for style of background image */
 .arboretum1 {
     height: auto;
     background-image: url(../img/extra2-robin-boyd-portrait-copyright-Mark-Strizic.jpg);
@@ -305,12 +330,12 @@ footer {
     background-attachment: fixed;
 
 }
-
+/* for style of background image */
 .arboretum2 {
     background-attachment: fixed;
 
 }
-
+/* for style of background image */
 .History {
     height: auto;
     background-image: url(../img/churchill-house-4.jpg);
@@ -319,7 +344,7 @@ footer {
     background-repeat: no-repeat;
     background-attachment: inherit;
 }
-
+/* for style of background image */
 .MainBuilding {
     height: auto;
     background-image: url(../img/churchill-house-19.jpg);
@@ -328,7 +353,7 @@ footer {
     background-repeat: no-repeat;
     background-attachment: inherit;
 }
-
+/* for style of background image */
 .NorthWing {
     height: auto;
     background-image: url(../img/churchill-house-13.jpg);
@@ -339,7 +364,7 @@ footer {
 
 
 }
-
+/* for style of background image */
 .Pool {
     height: auto;
     background-image: url(../img/churchill-house-18.jpg);
@@ -350,7 +375,7 @@ footer {
 
 
 }
-
+/* for style of background image */
 .keyfeatures {
     height: auto;
     background-image: url(../img/churchill-house-9.jpg);
@@ -361,7 +386,7 @@ footer {
 
 
 }
-
+/* for style of background image */
 .Signifigance {
     height: auto;
     background-image: url(../img/churchill-house-1.jpg);
@@ -372,44 +397,49 @@ footer {
 
 
 }
-
+/* for style of head title one */
 h1 {
     color: #FFC96C;
     text-align: center;
     vertical-align: middle;
     padding: 5%;
 }
+/* for style of head title two */
 h2{
     font-weight:bold;
     font-size: x-large;
 }
 
 @media (min-width: 1300px) {
+    /* for style of head title one */
     h1 {
         font-size: 714%;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1300px) {
+  /* for style of head title one */
     h1 {
         font-size: 4.8em;
     }
 }
 
 @media (max-width: 768px) {
+    /* for style of head title one */
     h1 {
         font-size: 2.6em;
     }
-
+/* for style of content */
     p.content {
         font-size: 1em;
     }
 }
-
+/* for padding */
 .mg {
     padding: 15% 5%;
 }
 
+/* for style of text */
 .text {
     border: 2px solid;
     border-radius: 5px;
@@ -420,7 +450,7 @@ h2{
 
 
 }
-
+/* for style of option one */
 .op1 {
     border: 2px solid;
     border-radius: 5px;
@@ -430,7 +460,7 @@ h2{
     font-size: small;
 
 }
-
+/* for style of option */
 .op {
     border: 2px solid;
     border-radius: 5px;
@@ -439,13 +469,17 @@ h2{
     padding: 5%;
     font-size: small;
     visibility: hidden;
-    transition: all 1s;
+    transition: all 1.5s;
 }
-
+/* for grid display of option */
+.op a{
+    display: grid;
+ }
+/* for hover display of option */
 .columns:hover>.op {
     visibility: visible;
 }
-
+/* for style of button1 */
 .button1 {
     display: grid;
     background-color: #FFC96C;
@@ -459,13 +493,14 @@ h2{
     border-radius: 10px;
     margin-top: 10px;
 }
-
+/* for style of button1 span*/
 .button1 span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: all 0.5s;
 }
+/* for style of button1 span*/
 
 .button1 span:after {
     content: '\00bb';
@@ -476,17 +511,20 @@ h2{
     transition: 0.5s;
     font-size: inherit;
 }
+/* for style of button1 span*/
 
 .button1:hover span {
     padding-right: 55%;
 
 }
+/* for style of button1 span*/
 
 .button1:hover span:after {
     opacity: 1;
     right: 0;
 }
 
+/* for style of button */
 
 .button {
     position: relative;
@@ -505,6 +543,7 @@ h2{
     margin: 8px;
     display: inline-block;
 }
+/* for style of button */
 
 .button:after {
     content: "";
@@ -518,6 +557,7 @@ h2{
     opacity: 0;
     transition: all 0.8s
 }
+/* for style of button */
 
 .button:active:after {
     padding: 0;
@@ -525,16 +565,18 @@ h2{
     opacity: 1;
     transition: 0s
 }
+/* for style of button */
 
 .button:hover {
     background-color: gray
 }
-i.fa.fa-home{
-    text-align: center;
-}
+/* for style of icon */
+i.fa.fa-home,
 i.fa.fa-arrow-up{
     text-align: center;
 }
+/* for style of icon */
+
 i.fa.fa-facebook,
 i.fa.fa-twitter,
 i.fa.fa-youtube-play
@@ -542,11 +584,10 @@ i.fa.fa-youtube-play
     color: #FFFFFF;
     margin-right: 5%;
 }
+/* for style of icon */
+
 i.fa.fa-facebook:hover,
 i.fa.fa-twitter:hover,
 i.fa.fa-youtube-play:hover{
     color: #FFC96C;
-}
-.op a{
-   display: grid;
 }
